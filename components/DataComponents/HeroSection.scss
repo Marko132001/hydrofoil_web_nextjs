@@ -1,0 +1,69 @@
+.imageWrapper video{
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+
+.heroWrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .heroWrapper::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imageWrapper {
+    z-index: -1;
+
+  }
+  
+  .heroContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    font-size: 50px;
+
+    text-align: center;
+    top: 200px;
+
+  }
+
+  @media (max-width: 768px){
+    .heroWrapper{
+        height: 60vh;
+    }
+
+    .heroContent{
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 455px){
+    .heroWrapper{
+        height: 50vh;
+    }
+
+    .heroContent{
+        font-size: 20px;
+    }
+  }
+
+

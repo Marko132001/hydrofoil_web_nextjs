@@ -1,0 +1,27 @@
+@import "./global.scss";
+
+//Components
+@import "../components/NavBar.scss";
+@import "../components/HomeHeader.scss";
+@import "../components/PostPreview.scss";
+@import "../components/Footer.scss";
+@import "../components/AllPostsPreview.scss";
+@import "../components/DataComponents/Layout.scss";
+@import "../components/PostPage.scss";
+@import "../components/DataComponents/CountingAnimation.scss";
+@import "../components/DataComponents/ImageSlider.scss";
+@import "../components/DataComponents/VideoPlayer.scss";
+@import "../components/Dropdown.scss";
+@import "../components/DataComponents/HeroSection.scss";
+@import "../components/DataComponents/ParallelParagraphs.scss";
+@import "../components/DataComponents/TextAndImage.scss";
+@import "../components//DataComponents/TitleAndText.scss";
+@import "../components//DataComponents/ImageAndCaption.scss";
+
+@import "../components/DataComponents/PDFViewer.scss";
+@import "../components/DataComponents/Button.scss";
+@import "../components/DataComponents/TextAndButton.scss";
+@import "../components/DataComponents/WebForm.scss";
+@import "../components/DataComponents/LogoSlider.scss";
+@import "../components/DataComponents/Timeline.scss";
+@import "../components/DataComponents/SplitScreen.scss";

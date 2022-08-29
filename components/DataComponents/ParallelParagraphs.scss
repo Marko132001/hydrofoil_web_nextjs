@@ -1,0 +1,65 @@
+.paragraph-container{
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    
+    @media screen and (max-width: 820px) {
+        font-size: 16px;
+    }
+    
+}
+
+.cards-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+  
+  .card {
+    width: 43%;
+    margin: 1%;
+    background: rgb(44, 180, 229);
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    transition: .3s all;
+    box-shadow: 0 2px 5px 0 rgba(3,6,26,0.15);
+    @media screen and (max-width: 1240px) {
+      width: 48%;
+    }
+    @media screen and (max-width: 820px) {
+      width: 100%;
+      margin: 4% auto;
+    }
+    &:hover {
+      box-shadow: 0px 0px 40px -10px rgba(0,0,0,0.5);
+      transform: scale(1.05);
+    }
+    .paragraph-text{
+        text-align: left;
+        font-weight: 200;
+        font-size: 1.25rem;
+
+    }
+
+    h3{
+      font-size: 1.5rem;
+      line-height: 1.15;
+      margin: 2em 0 0.5em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h5{
+      text-align: center;
+      padding: 5px;
+
+    }
+}
+

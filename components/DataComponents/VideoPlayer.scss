@@ -1,0 +1,28 @@
+.videoPlayerLayout {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.videoPlayerLayout .videoPlayer:hover{
+    transition: .2s linear;
+    transform: scale(1.1);
+}
+
+.videoPlayer{
+
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    object-fit: cover;
+    outline: none;
+    border: none;
+
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
