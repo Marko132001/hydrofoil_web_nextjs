@@ -17,7 +17,7 @@ module.exports = {
   },
 
   images: {
-    domains: ['https://sleepy-citadel-60207.herokuapp.com'],
+    domains: ['https://res.cloudinary.com/hydrofoilweb'],
   },
 
 }
