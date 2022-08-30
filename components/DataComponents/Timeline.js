@@ -11,7 +11,7 @@ function Timeline({post}) {
                         {post.attributes.title}
                     </span>
                     <div className="allPostsImage">
-                        <Image src={process.env.STRAPI_URL + post.attributes.image.data.attributes.formats.small.url} width="400" height="267" alt="image"  />
+                        <Image src={process.env.STRAPI_URL + post.attributes.image.data.attributes.url} width="400" height="267" alt="image"  />
                     </div>
                     <time>{post.attributes.date}</time>
                     <p>{post.attributes.description}</p>

@@ -17,7 +17,7 @@ module.exports = {
   },
 
   images: {
-    domains: ['localhost'],
+    domains: ['https://sleepy-citadel-60207.herokuapp.com'],
   },
 
 }
