@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import hydrofoil_logo from '../images/hydrofoil_logo.png';
-import axios from "axios";
 import Dropdown from './Dropdown';
+import Link from 'next/link';
 
 const Logo = () => {
   return <Image
@@ -35,32 +35,16 @@ function NavBar( {navItems} ) {
 
   const [dropdown, setDropdown] = React.useState(false);
 
-  //const [isLoading, setIsLoading] = useState(true);
-
-  //const [navItems, setNavItems] = useState([]);
 
   const [isOpen, setIsOpen] = React.useState(false);
-/*
-  useEffect(() => {
-    async function fetchNavData(){
-      const navRes = await axios.get("http://localhost:1337/api/navigation-items/?populate=*");
-      setNavItems(navRes.data);
-      setIsLoading(false);
-    }
-    fetchNavData();   
-  }, []);
 
-  if(isLoading){
-    return <></>
-  }
-*/
 
   return (
     <>
       <nav className={navBar ? 'navbar active' : 'navbar'}>
-        <a href="/" className="navbar-logo">
+        <Link href="/" className="navbar-logo">
           <h3 className="title">Adria<span className="subword">Hydrofoil</span></h3>
-        </a>
+        </Link>
         <ul className={`nav-items ${isOpen && "open"}`}>
           {navItems.data.map((item) => {
             if (item.attributes.title === "Projects") {

@@ -11,7 +11,7 @@ function ImageAndCaption( {element} ) {
                 {element.imageComponent.map((item) => {
 
                     return(
-                        <a href={item.link}>
+                        <a href={item.link} key={item.id}>
                             <div className="imageAndCaption">
                                 <div className="image">
                                     <Image src={process.env.STRAPI_URL + item.image.data.attributes.url} 
