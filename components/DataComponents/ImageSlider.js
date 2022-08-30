@@ -32,7 +32,7 @@ function ImageSlider( {element} ){
                                     image={image}
                                     key={image.id}
                                     className="slider_image"
-                                    src = {process.env.STRAPI_URL + image.attributes.url}
+                                    src = {image.attributes.url}
                                     alt = "image"
                                     width={(image.attributes.width == 1920) ? "1920" : "1000"}
                                     height={(image.attributes.height == 852) ? "852" : "600"}
