@@ -17,7 +17,7 @@ module.exports = {
   },
 
   images: {
-    domains: ['https://res.cloudinary.com/hydrofoilweb'],
+    domains: ['res.cloudinary.com'],
   },
 
 }
