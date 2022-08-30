@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import MarkdownIt from "markdown-it";
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from "./VideoPlayer";
 
 function TextAndImage( {element} ) {
     const md = new MarkdownIt();

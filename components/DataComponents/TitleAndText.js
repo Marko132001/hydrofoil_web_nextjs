@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import MarkdownIt from "markdown-it";
 
 function TitleAndText( {element} ) {
