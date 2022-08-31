@@ -7,7 +7,7 @@ function PostPreview( {post} ) {
       
       <div className="postPreview">
         <div className="postImage">
-          <Image src={post.attributes.image.data.attributes.formats.small.url} layout="fill"  alt="image"  />
+          <Image src={process.env.IMAGES_STRAPI_URL + post.attributes.image.data.attributes.formats.small.url} layout="fill"  alt="image"  />
         </div>
         <div className="postInfo">
           <div className="postDate">

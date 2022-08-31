@@ -8,7 +8,7 @@ function AllPostsPreview( {post} ) {
       <div className="allPostsPreview">
         <a href={`/posts/${post.id}`}>
             <div className="allPostsImage">
-                <Image src={post.attributes.image.data.attributes.url} width="400" height="267" alt="image"  />
+                <Image src={process.env.IMAGES_STRAPI_URL + post.attributes.image.data.attributes.url} width="400" height="267" alt="image"  />
             </div>
             <div>
                 <span>{post.attributes.date}</span>

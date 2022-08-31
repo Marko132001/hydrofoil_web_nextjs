@@ -14,7 +14,7 @@ function TextAndImage( {element} ) {
             <div className={element.changeLayout ? 'layout active' : 'layout'}>
                 <div className="layout_image">
                     <Image
-                    src = {element.image.data.attributes.url}
+                    src = {process.env.IMAGES_STRAPI_URL + element.image.data.attributes.url}
                     alt = "image"
                     layout="responsive"
                     width={(element.image.data.attributes.width == null) ? "400" : element.image.data.attributes.width}
