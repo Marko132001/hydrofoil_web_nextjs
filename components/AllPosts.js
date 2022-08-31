@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import AllPostsPreview from "./AllPostsPreview";
 
 function AllPosts({ posts }){
+
+    const [allPosts, setAllPosts] = useState([]);
+
+    useEffect(() => {
+        setAllPosts(posts.data);
+    }, [posts.data]);
+
     function renderPostPreviews(){
-        return posts.data.map((post) => {
+        return allPosts.reverse().map((post) => {
             return <AllPostsPreview post={post} key={post.id} />
         });
     }

@@ -12,7 +12,7 @@ function HomeLatestPosts( {posts} ) {
     function renderPostPreviews(){
         return( 
         <div className="timeline-container">
-            {latestPosts.map((post) => {
+            {latestPosts.reverse().map((post) => {
                 
                 return <Timeline post={post} key={post.id}/>
                 
