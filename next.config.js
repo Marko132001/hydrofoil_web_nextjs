@@ -14,12 +14,6 @@ module.exports = {
     IMAGES_STRAPI_URL: process.env.IMAGES_STRAPI_URL
   },
 
-  publicRuntimeConfig: {
-      STRAPI_URL: process.env.STRAPI_URL,
-      IMAGES_DOMAIN: process.env.IMAGES_DOMAIN,
-      IMAGES_STRAPI_URL: process.env.IMAGES_STRAPI_URL
-  },
-
   images: {
     domains: [process.env.IMAGES_DOMAIN],
   },
